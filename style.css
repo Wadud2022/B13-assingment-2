@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;600;700&display=swap');
+
+ *{ 
+   margin:0; 
+   padding:0; 
+   box-sizing:border-box;} 
+
+
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* shared styles */
+.dispaly-flex {display: flex;}
+
+
+.text-color { color: #ffffff; }
+
+
+
+/*  Header styles */
+
+
+/* navbar related styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background:rgba(11, 6, 22, 0.6);
+  backdrop-filter:blur(12px);
+ ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #000000;
+  border-bottom: 1px solid #e70404;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
