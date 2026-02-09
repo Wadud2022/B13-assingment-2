@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;600;700&display=swap');
 
+
+:root{
+  --bg:#0b0616;
+  --bg-deep:#120824;
+  --bg-soft:#1a0b2e;
+  --card:#24103d;
+  --accent:#7b2cff;
+  --accent-pink:#ffa600dc;
+  --accent-mint:#00ff9d;
+  --text:#ffffff;
+  --muted:#e7e425;
+   --shadow:0 20px 60px rgba(8, 2, 24, 0.55); 
+}
  *{ 
    margin:0; 
    padding:0; 
@@ -20,7 +33,7 @@
 .dispaly-flex {display: flex;}
 
 
-.text-color { color: #ffffff; }
+.text-color { color: var(--text); }
 
 
 
@@ -32,15 +45,16 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background:rgba(11, 6, 22, 0.6);
+  /* background:rgba(44, 224, 38, 0.918); */
   backdrop-filter:blur(12px);
- ;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #000000;
+  background-color: #1a0b2e;
   border-bottom: 1px solid #e70404;
+
+ 
 }
 
 .nav-item {
@@ -53,3 +67,32 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+ 
+.btn-primary{
+  background:linear-gradient(31deg, #FFEB3B, #ff00ebdc, var(--accent));
+  border:currentColor;
+  padding: 10px 20px;
+  border-radius:30px;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 10px 30px rgba(44, 24, 15, 0.705);}
+
+
+
+  .logo{
+  font-size:24px;
+  letter-spacing:0.5px;
+}
+
+.logo span{
+  background:linear-gradient(45deg, var(--accent-pink), var(--accent));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;}
+
+
+  /* .container{
+  width:min(1100px, 92%);
+  margin:0 auto;} */
