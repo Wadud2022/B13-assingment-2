@@ -13,8 +13,11 @@
   --text:#ffffff;
   --yollow:#ffb703;
   --piku:#ff00cc;
-   --shadow:0 20px 60px rgba(8, 2, 24, 0.55); 
-}
+   --shadow:0 20px 60px rgba(8, 2, 24, 0.55); }
+   .text-color { color: var(--text); } 
+
+
+
  *{ 
    margin:0; 
    padding:0; 
@@ -35,7 +38,7 @@
 .dispaly-flex {display: flex;}
 
 
-.text-color { color: var(--text); }
+
 
 
 
@@ -170,19 +173,22 @@
   top:45px;
   right:25px;
 
-  background:var(--accent-mint);
-  color:var(--bg-deep);
-
+   background:var(--accent-mint); 
+   color:var(--bg-deep); 
+ 
   padding:5px 12px;
   font-size:20px; 
   font-weight:600;
-  border-radius:20px;
-}
+  border-radius:20px; 
+ } 
 
 
-/* ========================= */
+/* ========================= *//* ========================= */
 /* TEXT */
-/* ========================= */
+/* ========================= *//* TEXT */ /* TEXT *//* ========================= */
+
+
+
 
 h1{
   font-size:65px;
@@ -234,7 +240,124 @@ p{
   color:var(--accent-mint);
 }
 
+#about{
+  padding:80px 0 40px;
+  text-align:center;
+  background: var(--bg-deep);
+  color: var(--text);
+  
+  /* border-bottom: var(--bg-light); */
+}
+ /* .divider{
+    width:400%;              /* ছোট করে মাঝখানে */
+    /* height:0.5px; */
+  /* background:#d40b0b;                      dark soft line */
+      /* margin:50px auto; }  */ */
+
+/* .about h2{
+  font-size:32px;
+  margin-bottom:16px;
+ color:var(--text);
+}  */
+
+.about p{
+  color:var(--text);
+  line-height:1.7;
+} 
+
+.about .subtle{
+  margin-top:12px;
+}
+.stats{
+  background:var(--bg-deep);
+  padding:50px 0;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  text-align:center;
+}
+
+.stat h3{
+  color:var(--accent-mint);
+  font-size:40px;
+  margin-bottom:6px;
+}
+
+.stat span{
+  color:var(--text);
+  text-transform:uppercase;
+  font-size:12px;
+  letter-spacing:1px;
+}
 
 
+/* ===== Section ===== */
+.features{
+    padding:100px 20px;
+    background: var(--bg-light);
+    color: var(--text);
+}
 
+.container{
+    max-width:1200px;
+    margin:auto;
+}
 
+.title{
+    text-align:center;
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:60px;
+}
+
+/* ===== Grid Layout ===== */
+.grid{
+    display:grid;
+    grid-template-columns:200px;
+    grid-auto-rows: 300px;
+    gap:30px;
+}
+
+/* ===== Card ===== */
+.card{
+    background:linear-gradient(145deg,#231048,#1a0c38);
+    border-radius:20px;
+    padding:28px;
+    display:grid;
+    flex-direction:column-reverse;
+    justify-content:center;
+    gap:10px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+/* big left card */
+.big{
+    grid-row: span 2;
+}
+
+/* wide bottom card */
+.wide{
+    grid-column: span 2;
+}
+
+.icon{
+    width:45px;
+    margin-bottom:8px;
+}
+
+.card h3{
+    font-size:18px;
+}
+
+.card p{
+    font-size:14px;
+    color:#bdb6d6;
+    line-height:1.5;
+}
